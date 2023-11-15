@@ -1,7 +1,11 @@
+import { printProps } from "./printProps";
+import { UserInfo } from "./UserInfo";
+import { withUser } from "./withUser";
+
+const UserInfoWrapper = withUser(UserInfo, 234);
+
 function App() {
-	return (
-		<h1>Your code goes here</h1>
-	);
+  return <UserInfoWrapper />;
 }
 
 export default App;
